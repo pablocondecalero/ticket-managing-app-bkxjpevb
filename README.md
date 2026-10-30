@@ -1,6 +1,6 @@
 # Coding Assignment
 
-Practica Pablo-The goal of this assignment is to showcase your ability to develop features and your coding style. Due to the time constraint you will have to prioritize what you work on, and have to try and balance cleanliness with just getting it done.
+Practica Pablo 30 de octubre 2026-The goal of this assignment is to showcase your ability to develop features and your coding style. Due to the time constraint you will have to prioritize what you work on, and have to try and balance cleanliness with just getting it done.
 
 Even though the app is small, one can easily spend the whole week working on it: perfecting styles, testing every single method, or carefully crafting every single line of code. Please don't! Do as much as you can in about two hours and share the results.
 
