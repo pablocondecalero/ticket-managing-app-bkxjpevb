@@ -1,0 +1,34 @@
+<div class="container">
+  <ng-container *ngIf="ticket$ | async as ticket; else noTicketFound">
+    <h1 data-testid="ticket-details-description">{{ ticket.description }}</h1>
+    <mat-divider></mat-divider>
+    <div class="actions">
+      <feat-user-select
+        label="Assigned To"
+        [selectedValue]="ticket.assigneeId"
+        (selectUser)="setAssignee($event, ticket)"
+      ></feat-user-select>
+
+      <div class="completed">
+        <mat-checkbox
+          (change)="setCompleted(ticket)"
+          [checked]="ticket.completed"
+          >Completed</mat-checkbox
+        >
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #noTicketFound>
+    <h1>Could not find Ticket</h1>
+    <h3>Please select from the list</h3>
+  </ng-template>
+
+  <div class="close">
+    <button mat-icon-button (click)="closePane()">
+      <mat-icon aria-hidden="false" aria-label="Close Details Pane"
+        >close</mat-icon
+      >
+    </button>
+  </div>
+</div>

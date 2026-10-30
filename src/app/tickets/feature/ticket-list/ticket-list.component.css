@@ -1,0 +1,18 @@
+.filter-bar {
+  width: 100%;
+  padding: 8px;
+}
+
+.ticket-grid {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+ui-ticket-card {
+  min-width: calc(25% - 8px);
+  max-width: calc(50% - 8px);
+  margin: 4px;
+
+  cursor: pointer;
+}
